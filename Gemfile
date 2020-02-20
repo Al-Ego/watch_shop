@@ -4,11 +4,13 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.7.0'
 gem 'rails', '~> 6.0.2', '>= 6.0.2.1'
 #gem 'activestorage'
-#gem 'bootstrap-sass'
-#gem 'coffee-rails'
+
+gem 'bootstrap-sass'
+gem 'coffee-rails'
+gem 'jquery-rails'
+
 gem 'faker', git: 'https://github.com/faker-ruby/faker.git', branch: 'master'
 gem 'jbuilder'
-#gem 'jquery-rails'
 #gem 'oj'
 #gem 'oj_mimic_json'
 gem 'pq'
