@@ -12,6 +12,7 @@ Playlist: https://www.youtube.com/watch?v=Rj3yRaxXEEQ&list=PL9Gk1O6XmsoYeUbWGe52
 </br>bundle update
 <br> config Postgresql user and rights<br>
 CREATE role watch_shop WITH LOGIN CREATEDB ENCRYPTED password 'pass1';
+</br>yarn install --check-files
 </br>rails db:prepare
 </br>rails db:migrate
 </br>rails db:seed
