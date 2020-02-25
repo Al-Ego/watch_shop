@@ -27,7 +27,7 @@ group :development, :test do
   gem 'database_cleaner'
   gem 'factory_bot'
   gem 'pg'
-#  gem 'pry'
+  gem 'pry'
   gem 'rails-controller-testing'
 #  gem 'rb-readline'
   gem 'rspec-json_expectations'

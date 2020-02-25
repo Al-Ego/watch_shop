@@ -2,13 +2,13 @@
   <div id="top" class="callbacks_container">
     <ul class="rslides" id="slider4">
       <li>
-        <%= image_tag("bnr-1.jpg", alt="bnr1") %>
+        <%= image_tag("bnr-1.jpg", alt: "bnr1") %>
       </li>
       <li>
-        <%= image_tag("bnr-2.jpg", alt="bnr2") %>
+        <%= image_tag("bnr-2.jpg", alt: "bnr2") %>
       </li>
       <li>
-        <%= image_tag("bnr-3.jpg", alt="bnr3") %>
+        <%= image_tag("bnr-3.jpg", alt: "bnr3") %>
       </li>
     </ul>
   </div>
@@ -23,9 +23,9 @@
         <% @brands.each do |i| %>
           <div class="col-md-4 about-left">
             <figure class="effect-bubba">
-              <%=image_tag(i.img, alt="", class="img-responsive") %>
+              <%=image_tag(i.img, alt: "", class: "img-responsive") %>
               <figcaption>
-                <h2> <%= i.title %></h2>>
+                <h2> <%= i.title %></h2>
                 <p> <%= i.description %> </p>
               </figcaption>
             </figure>
@@ -34,7 +34,7 @@
         <div class="clearfix"></div>
       </div>
     </div>
-  </div>>
+  </div>
 <% end %>
 
 <% if @hits.nil? %>
@@ -48,7 +48,7 @@
             <div class="col-md-3 product-left">
               <div class="product-main simpleCart_shelfItem">
                 <a href="product/<%=hit.id%>" class="mask">
-                  <%=image_tag(hit.img, alt="", class="img-responsive zoom-img") %>
+                  <%=image_tag(hit.img, alt: "", class: "img-responsive zoom-img") %>
                 </a>
                 <%= %>
                 <div class="product-bottom">
@@ -58,7 +58,7 @@
                     <%=link_to 'cart_items', class: 'add-to-cart-link', data: {id: hit.id} do %>
                       <i> </i>
                     <%end %>
-                    <span class="item_price">$ <$= hit.price %> </span>
+                    <span class="item_price">$ <%= hit.price %> </span>
                     <% if hit.old_price %>
                       <small> <del>$ <%= hit.old_price %></del></small>
                     <% end %>
