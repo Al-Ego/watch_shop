@@ -9,6 +9,7 @@ gem 'bootstrap-sass'
 gem 'coffee-rails'
 gem 'jquery-rails'
 
+
 gem 'faker', git: 'https://github.com/faker-ruby/faker.git', branch: 'master'
 gem 'jbuilder'
 #gem 'oj'
@@ -18,7 +19,9 @@ gem 'puma'
 gem 'sassc-rails'
 gem 'turbolinks'
 gem 'uglifier'
-gem 'webpacker'
+
+#gem 'webpacker'
+
 gem 'meta-tags'
 gem 'breadcrumbs_on_rails'
 gem 'turbolinks'
